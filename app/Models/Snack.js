@@ -5,10 +5,10 @@ export class Snack {
       this.quantity = quantity
   }
   get snackTemplate() {
-    return `<div class="col-2">
+    return `<div class="col-3">
   <h1>${this.name}</h1>
-  <button onclick="app.snackController.buySnack('${this.name}')">${this.price}
-  </button>
+  <button class="btn-primary"onclick="app.snackController.buySnack('${this.name}')">Buy 1
+  </button> <a>cost:$${this.price}</a>
   <p id="${this.name}">${this.quantity}</p>
 </div>`
   }

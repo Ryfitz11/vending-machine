@@ -13,8 +13,8 @@ class SnackService {
       ProxyState.snacks = ProxyState.snacks
     }
   }
-  addMoney() {
-    ProxyState.money += .25
+  addMoney(quarters) {
+    ProxyState.money += (quarters * .25)
   }
 }
 

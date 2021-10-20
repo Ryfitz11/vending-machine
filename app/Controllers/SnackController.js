@@ -12,8 +12,8 @@ export class SnackController {
   buySnack(snack) {
     snackService.buySnack(snack)
   }
-  addMoney() {
-    snackService.addMoney()
+  addMoney(quarters) {
+    snackService.addMoney(quarters)
   }
 }
 function _draw() {
